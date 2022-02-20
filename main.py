@@ -95,9 +95,8 @@ if not os.path.exists('auth.json'):
             print("Registration successful")
     elif choice == "3":
         username = input('Enter your username >> ')
-        password = input('Enter your password >> ')
         token = input('Enter your license >> ')
-        auth = requests.get(f"https://authify.biz/api/v1/universal/?type=activate&username={username}&password={password}&token={token}&program_key={program_key}&api_key={api_key}", 
+        auth = requests.get(f"https://authify.biz/api/v1/universal/?type=activate&username={username}&token={token}&program_key={program_key}&api_key={api_key}", 
         headers={"User-Agent": "Mozilla Authify"})
         json_data = json.loads(auth.text)
         if json_data['response'] == "program_doesnt_exist":
@@ -122,7 +121,6 @@ if not os.path.exists('auth.json'):
             data = {}
             data = ({
                 "username": username,
-                "password": password,
                 "token": token
             })
             with open('auth.json', 'w') as outfile:
