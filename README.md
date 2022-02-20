@@ -1,5 +1,6 @@
-<center>
-  <h1>Authify.biz-Python-Universal</h1>
-  <p>Python example for the universal api from authify.biz</p>
-</center>
+# Authify.biz-Python-Universal
+Python example for the universal api from authify.biz
 
+[Documentation](https://setup.authify.biz/authify/) is used to code this.
+
+---
