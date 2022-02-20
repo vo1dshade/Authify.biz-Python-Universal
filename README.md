@@ -17,5 +17,5 @@ App API / ENC Key is random generated string.
 After you created an app press "MANAGE" button
 Then Go to the "Tokens" section.
 
-
+---
 ⭐ If this project helps you
